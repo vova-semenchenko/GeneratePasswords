@@ -42,6 +42,7 @@
             this.comparePasswords = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.showPassword = new System.Windows.Forms.Button();
             this.generateGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -125,6 +126,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.showPassword);
             this.groupBox1.Controls.Add(this.timerTime);
             this.groupBox1.Controls.Add(this.comparePasswordTextBox);
             this.groupBox1.Controls.Add(this.label2);
@@ -153,6 +155,7 @@
             this.comparePasswordTextBox.Name = "comparePasswordTextBox";
             this.comparePasswordTextBox.Size = new System.Drawing.Size(875, 34);
             this.comparePasswordTextBox.TabIndex = 3;
+            this.comparePasswordTextBox.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -185,6 +188,20 @@
             // timer2
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // showPassword
+            // 
+            this.showPassword.BackColor = System.Drawing.SystemColors.Control;
+            this.showPassword.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.showPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.showPassword.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.showPassword.Location = new System.Drawing.Point(704, 37);
+            this.showPassword.Name = "showPassword";
+            this.showPassword.Size = new System.Drawing.Size(192, 33);
+            this.showPassword.TabIndex = 1;
+            this.showPassword.Text = "Show Password";
+            this.showPassword.UseVisualStyleBackColor = false;
+            this.showPassword.Click += new System.EventHandler(this.showPassword_Click);
             // 
             // Authorization
             // 
@@ -221,6 +238,7 @@
         private System.Windows.Forms.Label timerTime;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button showPassword;
     }
 }
 

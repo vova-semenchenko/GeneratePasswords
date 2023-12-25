@@ -24,7 +24,7 @@ namespace Password_Generator
 
             for (int i = 0; i < (int)passwordSize; i++)
             {
-                if (i % 3 == 0)
+                if (i % 3 == 0)  
                 {
                     int vowelsIndex = random.Next(0, vowels.Count);
                     Password.AppendChar(Alphabet.GetLowerOrUpperCase(vowels[vowelsIndex]));

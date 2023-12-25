@@ -126,5 +126,19 @@ namespace Password_Generator
             timer2.Stop();
             timer1.Start();
         }
+
+        private void showPassword_Click(object sender, EventArgs e)
+        {
+            if (comparePasswordTextBox.UseSystemPasswordChar)
+            {
+                showPassword.Text = "Hide Password";
+                comparePasswordTextBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                showPassword.Text = "Show Password";
+                comparePasswordTextBox.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
