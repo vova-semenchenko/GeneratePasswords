@@ -14,7 +14,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace Password_Generator
 {
-    public partial class Form1 : Form
+    public partial class Authorization : Form
     {
         private double timeInSeconds = 300;
         private TimeSpan time;
@@ -22,7 +22,7 @@ namespace Password_Generator
         private int inCorrectPasswordCount;
         private PasswordGenerator passwordGenerator;
 
-        public Form1()
+        public Authorization()
         {
             InitializeComponent();
         }
@@ -83,6 +83,10 @@ namespace Password_Generator
                 if (passwordGenerator.Password.Equals(password))
                 {
                     MessageBox.Show("Password is correct!");
+                    this.Hide();
+                    MainForm mainForm = new MainForm();                  
+                    mainForm.ShowDialog();
+                    this.Close();
                 }
                 else
                 {

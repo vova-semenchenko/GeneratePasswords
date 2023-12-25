@@ -1,6 +1,6 @@
 ﻿namespace Password_Generator
 {
-    partial class Form1
+    partial class Authorization
     {
         /// <summary>
         /// Required designer variable.
@@ -174,7 +174,7 @@
             this.comparePasswords.Name = "comparePasswords";
             this.comparePasswords.Size = new System.Drawing.Size(167, 33);
             this.comparePasswords.TabIndex = 1;
-            this.comparePasswords.Text = "Check";
+            this.comparePasswords.Text = "Enter";
             this.comparePasswords.UseVisualStyleBackColor = false;
             this.comparePasswords.Click += new System.EventHandler(this.comparePasswords_Click);
             // 
@@ -186,7 +186,7 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // Form1
+            // Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -194,7 +194,7 @@
             this.ClientSize = new System.Drawing.Size(982, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.generateGroupBox);
-            this.Name = "Form1";
+            this.Name = "Authorization";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Password Generator";
             this.Load += new System.EventHandler(this.Form1_Load);
